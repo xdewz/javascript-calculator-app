@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>Calculator APP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-area">
+        <div class="display" id="display">0</div>
+      </div>
+      <div class="control-panel">
+        <button id="clear" class="action">AC</button>
+        <button id="backspace" class="action">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5l11 0"
+            />
+            <path d="M12 10l4 4m0 -4l-4 4" />
+          </svg>
+        </button>
+        <button id="plus-minus" class="action">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 7h6" />
+            <path d="M7 4v6" />
+            <path d="M20 18h-6" />
+            <path d="M5 19l14 -14" />
+          </svg>
+        </button>
+        <button id="divide" class="operator">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 6a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" fill="currentColor" />
+            <path d="M11 18a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" fill="currentColor" />
+            <path d="M5 12l14 0" />
+          </svg>
+        </button>
+
+        <button id="num-7" class="number">7</button>
+        <button id="num-8" class="number">8</button>
+        <button id="num-9" class="number">9</button>
+        <button id="multiply" class="operator">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+
+        <button id="num-4" class="number">4</button>
+        <button id="num-5" class="number">5</button>
+        <button id="num-6" class="number">6</button>
+        <button id="minus" class="operator">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+          </svg>
+        </button>
+
+        <button id="num-1" class="number">1</button>
+        <button id="num-2" class="number">2</button>
+        <button id="num-3" class="number">3</button>
+        <button id="plus" class="operator">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M5 12l14 0" />
+          </svg>
+        </button>
+
+        <button id="percentage" class="number">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M16 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+            <path d="M6 7a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+            <path d="M6 18l12 -12" />
+          </svg>
+        </button>
+        <button id="num-0" class="number">0</button>
+        <button id="dot" class="number">.</button>
+        <button id="get-result" class="equals">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 10h14" />
+            <path d="M5 14h14" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
