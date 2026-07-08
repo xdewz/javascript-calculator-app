@@ -1,0 +1,1 @@
+This calculator app is a sleek, modern web tool for everyday math, featuring a clean dark interface and intuitive button layout. It handles basic arithmetic, percentages, sign toggling, and clear/backspace functions, all with smooth keyboard support—just type or click, and your calculations appear instantly.
